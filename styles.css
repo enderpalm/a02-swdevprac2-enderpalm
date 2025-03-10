@@ -5,12 +5,6 @@
     font-style: normal;
 }
 
-.pridi-extralight-<uniquifier > {
-    font-family: "Pridi", serif;
-    font-weight: <weight>;
-    font-style: normal;
-}
-
 body {
     font-family: Anuphan, sans-serif;
     margin: 0;
@@ -25,15 +19,24 @@ header {
     padding: 10px 20px;
 }
 .student-info {
-    text-align: right;
     font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    gap: 0.5em;
+    margin: 0.75em 0;
+}
+.student-name {
+    font-weight: 600;
+    margin: 0;
 }
 .student-code {
     font-weight: bold;
+    height: fit-content;
     color: white;
     background-color: #007bff;
     padding: 4px 8px;
-    margin: 0 4px;
     border-radius: 8px;
     transition: background-color ease-in-out 0.15s;
 }
@@ -47,18 +50,15 @@ h1 {
     font-weight: 800;
 }
 .tour-packages {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10;
-    justify-content: center;
-    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+    margin: 1em;
 }
 .package {
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin: 10px;
     padding: 10px;
-    width: 300px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 .package img {
@@ -91,8 +91,9 @@ h1 {
     background-color: #0056b3;
 }
 
-h2 {
+.register-header {
     text-align: center;
+    margin: 1em 0;
 }
 
 form {
