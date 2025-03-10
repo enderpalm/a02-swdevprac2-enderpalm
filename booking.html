@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tour Booking</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Pridi:wght@200;300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    </head>
+    <body>
+        <h2>ลงทะเบียนจองทัวร์</h2>
+        <form>
+            <div class="form-group">
+                <label for="tourGroup">ประเภทกลุ่มทัวร์</label>
+                <select id="tourGroup" name="tourGroup" required>
+                    <option value="">--เลือกประเภทกลุ่มทัวร์--</option>
+                    <option value="small">กลุ่มเล็ก (10 – 15 คน)</option>
+                    <option value="standard">กลุ่มมาตรฐาน (35-40 คน)</option>
+                </select>
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="joinLand" name="joinLand" />
+                <label for="joinLand"
+                    >ต้องการซื้อบัตรโดยสารเครื่องบินเอง (Join Land)</label
+                >
+            </div>
+            <div class="form-group">
+                <label for="numTravelers">จำนวนผู้ร่วมเดินทาง</label>
+                <input
+                    type="number"
+                    id="numTravelers"
+                    name="numTravelers"
+                    min="1"
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label for="contactName">ชื่อผู้ติดต่อ</label>
+                <input
+                    type="text"
+                    id="contactName"
+                    name="contactName"
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label for="contactPhone">เบอร์ผู้ติดต่อ</label>
+                <input
+                    type="text"
+                    id="contactPhone"
+                    name="contactPhone"
+                    required
+                />
+            </div>
+            <button type="submit">ลงทะเบียน</button>
+        </form>
+        <footer>
+            <p class="student-info">
+                <span class="student-code">6733047921</span> ชวัลวิชญ์ จิตหมั่น
+            </p>
+        </footer>
+    </body>
+</html>
